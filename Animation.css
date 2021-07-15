@@ -1,0 +1,67 @@
+.sky{
+    height: 500px;
+    width: 99vw;
+    background-color: skyblue;
+    border: 1px solid rgb(223, 114, 25);
+}
+
+.sun{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: relative;
+    animation: Animation  4s linear 0.1s infinite alternate;
+    animation-play-state: running;
+}
+
+@keyframes Animation {
+    0%{
+        left: 0%;
+        top: 0px;
+        background-color: yellow;
+        transform: scale(1);
+    }
+
+    25%{
+        left: 25%;
+        top: 400px;
+        background-color: tomato;
+        transform: scale(0.65);
+    }
+
+    50%{
+        left: 50%;
+        top: 0px;
+        background-color: yellow;
+        transform: scale(1);
+    }
+
+    75%{
+        left: 75%;
+        top: 400px;
+        background-color: tomato;
+        transform: scale(0.65);
+    }
+
+    100%{
+        left: 100%;
+        top: 0%;
+        background-color: yellow;
+        transform: scale(1);
+    }
+
+
+
+    /* from{
+        left: 0%;
+        background-color: yellow;
+
+    }
+
+    to{
+        background-color: tomato;
+        left: 94vw;
+    }
+ */
+}
